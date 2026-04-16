@@ -1,412 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — IT Student</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bert Ann Binasbas | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">portfolio</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">home</a></li>
-                <li><a href="#about" class="nav-link">about</a></li>
-                <li><a href="#projects" class="nav-link">projects</a></li>
-                <li><a href="#contact" class="nav-link">contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Bert Ann</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-terminal">
-                    <div class="terminal-header">
-                        <div class="terminal-dot red"></div>
-                        <div class="terminal-dot yellow"></div>
-                        <div class="terminal-dot green"></div>
-                        <span class="terminal-title">bash — 80×24</span>
-                    </div>
-                    <div class="terminal-body" id="terminalBody">
-                        <div class="terminal-line" data-delay="0">
-                            <span class="terminal-prompt">banned@portfolio:~$</span>
-                            <span class="terminal-command"> whoami</span>
-                        </div>
-                        <div class="terminal-line" data-delay="400">
-                            <div class="terminal-output">
-                                <span class="highlight">Bert Ann S. Binasbas</span> — IT Student & Web Developer
-                            </div>
-                        </div>
-                        <div class="terminal-line" data-delay="900">
-                            <span class="terminal-prompt">banned@portfolio:~$</span>
-                            <span class="terminal-command"> cat interests.txt</span>
-                        </div>
-                        <div class="terminal-line" data-delay="1300">
-                            <div class="terminal-output">
-                                <span class="accent">></span> Web Development & Software Engineering<br>
-                                <span class="accent">></span> Networking & System Administration<br>
-                                <span class="accent">></span> Cloud Computing & DevOps<br>
-                                <span class="accent">></span> Problem Solving & Open Source
-                            </div>
-                        </div>
-                        <div class="terminal-line" data-delay="1900">
-                            <span class="terminal-prompt">banned@portfolio:~$</span>
-                            <span class="terminal-command"> echo $STATUS</span>
-                        </div>
-                        <div class="terminal-line" data-delay="2300">
-                            <div class="terminal-output">
-                                <span class="highlight">Open to opportunities</span> <span class="accent">●</span>
-                            </div>
-                        </div>
-                        <div class="terminal-line" data-delay="2700">
-                            <span class="terminal-prompt">banned@portfolio:~$</span>
-                            <span class="terminal-cursor"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-stats reveal">
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="5">0</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="6">0</div>
-                        <div class="stat-label">Technologies</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="4">0</div>
-                        <div class="stat-label">Years Learning</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="150">0</div>
-                        <div class="stat-label">Commits</div>
-                    </div>
-                </div>
-
-                <div class="hero-cta reveal reveal-delay-1">
-                    <a href="#projects" class="btn-primary">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                        View Projects
-                    </a>
-                    <a href="#contact" class="btn-secondary">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        Contact Me
-                    </a>
-                </div>
-            </div>
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-content">
+        <p class="eyebrow">IT Student • Web Developer</p>
+        <h1>Hi, I’m Bert Ann Binasbas.</h1>
+        <p class="lead">
+          I build clean, responsive web applications and enjoy solving real-world problems with simple, maintainable code.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">get to know me</div>
-                <h2 class="section-title">About Me<span class="dot">.</span></h2>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-text reveal">
-                    <p>
-                        I'm a passionate <strong>Information Technology student</strong> with a strong focus on web development and software engineering. I believe in writing clean, maintainable code and building solutions that actually solve problems.
-                    </p>
-                    <p>
-                        My journey in tech started with curiosity about how websites work — now I'm building full-stack applications, exploring cloud infrastructure, and contributing to open-source projects.
-                    </p>
-                    <p>
-                        When I'm not coding, you'll find me tinkering with Linux servers, reading tech blogs, or participating in hackathons.
-                    </p>
-
-                    <div class="about-code-block reveal reveal-delay-1">
-                        <div class="code-block-header">
-                            <div class="terminal-dot red"></div>
-                            <div class="terminal-dot yellow"></div>
-                            <div class="terminal-dot green"></div>
-                            <span>about.json</span>
-                        </div>
-                        <div class="code-content">
-                            <span class="bracket">{</span><br>
-                            &nbsp;&nbsp;<span class="property">"name"</span>: <span class="string">"Bert Ann S. Binasbas"</span>,<br>
-                            &nbsp;&nbsp;<span class="property">"role"</span>: <span class="string">"IT Student"</span>,<br>
-                            &nbsp;&nbsp;<span class="property">"location"</span>: <span class="string">"Guiuan,Eastern Samar, Philippines"</span>,<br>
-                            &nbsp;&nbsp;<span class="property">"education"</span>: <span class="string">"BS Information Technology"</span>,<br>
-                            &nbsp;&nbsp;<span class="property">"interests"</span>: <span class="bracket">[</span><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Web Dev"</span>, <span class="string">"Networking"</span>,<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Cloud"</span>, <span class="string">"Open Source"</span><br>
-                            &nbsp;&nbsp;<span class="bracket">]</span>,<br>
-                            &nbsp;&nbsp;<span class="property">"available"</span>: <span class="value">true</span><br>
-                            <span class="bracket">}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-section reveal reveal-delay-2">
-                    <div class="skills-category">
-                        <div class="skills-category-title">frontend</div>
-                        <div class="skills-grid">
-                            <span class="skill-tag level-high">HTML</span>
-                            <span class="skill-tag level-high">CSS</span>
-                            <span class="skill-tag level-high">JavaScript</span>
-                            <span class="skill-tag level-high">Responsive Design</span>
-                            <span class="skill-tag level-mid">React</span>
-                            <span class="skill-tag level-mid">Tailwind CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-category">
-                        <div class="skills-category-title">backend & database</div>
-                        <div class="skills-grid">
-                            <span class="skill-tag level-mid">Node.js</span>
-                            <span class="skill-tag level-mid">Express.js</span>
-                            <span class="skill-tag level-mid">MySQL</span>
-                            <span class="skill-tag level-mid">PHP</span>
-                            <span class="skill-tag">MongoDB</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-category">
-                        <div class="skills-category-title">tools & devops</div>
-                        <div class="skills-grid">
-                            <span class="skill-tag level-high">Git & GitHub</span>
-                            <span class="skill-tag level-mid">VS Code</span>
-                            <span class="skill-tag level-mid">Linux</span>
-                            <span class="skill-tag level-mid">Docker</span>
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">Figma</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-category">
-                        <div class="skills-category-title">networking & it fundamentals</div>
-                        <div class="skills-grid">
-                            <span class="skill-tag level-mid">TCP/IP</span>
-                            <span class="skill-tag level-mid">DNS & DHCP</span>
-                            <span class="skill-tag level-mid">Firewall Config</span>
-                            <span class="skill-tag">Cisco IOS</span>
-                            <span class="skill-tag">Wireshark</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="about" class="section">
+      <div class="container grid-two">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m currently taking BS Information Technology and focusing on front-end development while growing my back-end and networking skills.
+          </p>
+          <p>
+            I enjoy learning by building, collaborating, and improving existing projects step by step.
+          </p>
         </div>
+        <div>
+          <h3>Core Skills</h3>
+          <ul class="skills-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive UI Design</li>
+            <li>Node.js, PHP, MySQL</li>
+            <li>Git, GitHub, Linux</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">what i've built</div>
-                <h2 class="section-title">Projects<span class="dot">.</span></h2>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="project-image-bg" style="background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);"></div>
-                        <div class="project-overlay">
-                            <button class="view-btn" onclick="showToast('Opening project demo...')">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                View Project
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-number">01</div>
-                        <h3>E-Commerce Platform</h3>
-                        <p>Full-featured e-commerce site with product catalog, cart system, user authentication, and checkout flow.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="showToast('Opening GitHub repo...')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                                Source Code
-                            </a>
-                            <a href="#" class="project-link" onclick="showToast('Opening live demo...')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card reveal reveal-delay-1">
-                    <div class="project-image">
-                        <div class="project-image-bg" style="background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #3d2a5c 100%);"></div>
-                        <div class="project-overlay">
-                            <button class="view-btn" onclick="showToast('Opening project demo...')">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                View Project
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-number">02</div>
-                        <h3>Task Management App</h3>
-                        <p>Responsive task manager with CRUD operations, filtering, priority levels, and local storage persistence.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">LocalStorage</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="showToast('Opening GitHub repo...')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                                Source Code
-                            </a>
-                            <a href="https://b4nn3d0124.github.io/Mis_Portfolio/" class="project-link" onclick="showToast('Opening live demo...')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card reveal reveal-delay-2">
-                    <div class="project-image">
-                        <div class="project-image-bg" style="background: linear-gradient(135deg, #0a192f 0%, #112240 50%, #1d3461 100%);"></div>
-                        <div class="project-overlay">
-                            <button class="view-btn" onclick="showToast('Opening project demo...')">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                View Project
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-number">03</div>
-                        <h3>Weather Dashboard</h3>
-                        <p>Real-time weather app consuming REST API with dynamic UI, geolocation support, and 5-day forecasts.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">REST API</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">Geolocation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="showToast('Opening GitHub repo...')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                                Source Code
-                            </a>
-                            <a href="#" class="project-link" onclick="showToast('Opening live demo...')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>Task Management App</h3>
+            <p>A simple productivity app with task creation, filtering, and local storage support.</p>
+            <p class="stack">HTML • CSS • JavaScript</p>
+          </article>
+          <article class="card">
+            <h3>E-Commerce Prototype</h3>
+            <p>A functional storefront concept with product listing, cart flow, and checkout UI.</p>
+            <p class="stack">JavaScript • PHP • MySQL</p>
+          </article>
+          <article class="card">
+            <h3>Weather Dashboard</h3>
+            <p>An API-based weather app that shows current conditions and short-term forecast.</p>
+            <p class="stack">JavaScript • REST API • CSS</p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">let's work together</div>
-                <h2 class="section-title">Get In Touch<span class="dot">.</span></h2>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to new opportunities, collaborations, or just a friendly chat about tech.</p>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </div>
-                        <span class="contact-item-text">bertannbinasbas@gmail.com</span>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </div>
-                        <span class="contact-item-text">+63 938 320-0900</span>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <span class="contact-item-text">Guiuan, Eastern Samar, Philippines</span>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#" class="social-link" onclick="showToast('Opening LinkedIn...')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/b4nn3d0124" class="social-link" onclick="showToast('Opening Github...')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                            GitHub
-                        </a>
-                        <a href="#" class="social-link" onclick="showToast('Opening Twitter...')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-                            Twitter
-                        </a>
-                    </div>
-                </div>
-
-                <form class="contact-form reveal reveal-delay-1" id="contactForm">
-                    <div class="form-group">
-                        <label>your name</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label>your email</label>
-                        <input type="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label>subject</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-group">
-                        <label>your message</label>
-                        <textarea required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                        Send Message
-                    </button>
-                </form>
-            </div>
+    <section id="contact" class="section">
+      <div class="container grid-two">
+        <div>
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:bertannbinasbas@gmail.com">bertannbinasbas@gmail.com</a></p>
+          <p>Location: Guiuan, Eastern Samar, Philippines</p>
+          <p>GitHub: <a href="https://github.com/b4nn3d0124" target="_blank" rel="noreferrer">@b4nn3d0124</a></p>
         </div>
+
+        <form id="contactForm" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Bert Ann. All rights reserved.</p>
-            <p class="made-with">Designed & Built with <span style="color: var(--accent-red);">♥</span> and lots of coffee</p>
-        </div>
-    </footer>
-
-    <!-- Toast Notification -->
-    <div class="toast" id="toast">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-        <span id="toastMessage"></span>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Bert Ann Binasbas</p>
     </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
